@@ -1,0 +1,80 @@
+<mjml>
+  <mj-head>
+  <mj-title>UAC</mj-title>
+    <mj-font name="Work Sans" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Work Sans, Arial, sans-serif" font-size="14px" line-height="18px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body width="600px">
+    <mj-section padding="15px 0">
+      <mj-group>
+        <mj-column width="100%" vertical-align="middle">
+          <mj-image align="left" width="150px" href="https://www.uac.edu.au/" src="https://www.uac.edu.au/applications/assets/img/emails/uac-email-banner-wide.png" padding="0" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="10px 6%">
+      <mj-group>
+        <mj-column width="50%" >
+          <mj-text font-family="Work Sans, Arial, sans-serif" font-size="14px" line-height="20px" color="#242424" padding="0">
+            <p>Application number:
+             <br />
+             ${applNum?c}
+             </p>
+          </mj-text>
+        </mj-column>
+         <mj-column width="50%" >
+           <mj-text align="right" font-family="Work Sans, Arial, sans-serif" font-size="14px" line-height="18px" color="#242424" padding="0">
+              <p>Date: ${date}</p>
+           </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+     <mj-section padding="15px 0">
+      <mj-column >
+        <mj-divider padding="0" border-width="1px" border-style="solid" border-color="lightgrey" />
+      </mj-column>
+    </mj-section>
+    <mj-section padding="10px 6%">
+      <mj-column width="100%" vertical-align="middle">
+        <mj-text font-family="Work Sans, Arial, sans-serif" font-size="14px" line-height="18px" color="#242424" padding="0 0 15px">
+          <p>Dear ${addressee},</p>
+          <h3 style="font-size:18px; line-height:26px;">You haven't completed your application</h3>
+          <p>You have only partially completed your application for tertiary study.</p>
+          <p>To complete it, log in to your application to resume where you left off through the Manage your Application button below, or through <strong><a href="https://www.uac.edu.au/" target="_blank" style="color:#448532; text-decoration:underline">UAC's website.</a></strong></p>
+          <p>You'll need your application number and UAC PIN. These were emailed to you when you applied.</p>
+        </mj-text>
+        <mj-button css-class="btn-register" align="center" href="https://www5.uac.edu.au/uacug/" background-color="#448532" color="#fff" font-size="13px" line-height="24px" padding="0" font-weight="500">Manage your application   </mj-button>
+        <mj-text font-family="Work Sans, Arial, sans-serif" font-size="14px" line-height="22px" color="#242424" padding="10px 0">
+          <p>{#if year12}</p>
+          <p> Year 12 students are encouraged to attend one of our upcoming expos or an information day near you.</p>
+          <p>{#if}</p>
+          <p> This is an automated message, do not reply directly to it. If you have any queries about this letter call UAC on 1300 ASK UAC (1300 275 822), from mobiles on (02) 9752 0200 or from overseas on +61 2 9752 2000 or use the website <strong><a href="https://www.uac.edu.au/" target="_blank" style="color:#448532; text-decoration:underline">enquiry form.</a></strong></p>
+        </mj-text>
+        <mj-text font-family="Work Sans, Arial, sans-serif" font-size="14px" line-height="22px" color="#242424" padding="0 0 15px">
+          <p>Customer Service<br />
+          Universities Admissions Centre (UAC)</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-wrapper background-color="#1E2245" padding="10px 0">
+      <mj-section padding="0">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text font-family="Work Sans, Arial, sans-serif" font-size="12px" line-height="9px" color="#fff" padding-left="25px">
+            <p>Universities Admissions Centre (NSW & ACT) Pty Ltd </p>
+            <p>Post: Locked Bag 112, Silverwater NSW 2128, Australia</p>
+            <p>Website: www.uac.edu.au</p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="100%" border-left="2px solid #242424" vertical-align="middle" css-class="no-border">
+          <mj-text align="right" font-family="Work Sans, Arial, sans-serif" font-size="12px" line-height="9px" color="#fff" padding-left="25px">
+            <p>ACN 070 055 935 | ABN 19 070 055 935</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      
+    </mj-wrapper>
+   
+  </mj-body>
+</mjml>
